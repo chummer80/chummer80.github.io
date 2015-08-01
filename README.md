@@ -1,4 +1,5 @@
-# portfolio
-Portfolio of web dev projects
+# Mike Chu - Full Stack Web Developer
 
-http://chummer80.github.io/portfolio/
+Portfolio of web development projects
+
+http://chummer80.github.io
