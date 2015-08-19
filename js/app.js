@@ -71,21 +71,22 @@ $(document).ready(function() {
             logo: 'images/tictactoe_logo.png',
             thumb: 'images/tictactoe_thumb.png',
             link: 'https://toe.firebaseapp.com'
-        },
-        {
-            name: "ZIP Zap",
-            description: "Learn about any ZIP code in the United States using ZIP Zap! The city, state, time zone, weather and map of that ZIP code are just a click away. Even a 3D view of the area can be seen with the help of the Google Earth plugin. The APIs used to get this content were Weather Underground's web API and the Google Maps / Google Earth JavaScript APIs. (JavaScript, jQuery, jQueryUI, AJAX)",
-            logo: 'images/zipzap_logo.png',
-            thumb: 'images/zipzap_thumb.png',
-            link: 'http://chummer80.github.io/zipzap/'
-        },
-        {
-            name: "NBA Quiz",
-            description: "Think you know a lot about NBA basketball? Test your skills by answering these trivia questions. (JavaScript, jQuery, HTML5, CSS3)",
-            logo: 'images/nbaquiz_logo.png',
-            thumb: 'images/nbaquiz_thumb.png',
-            link: 'http://chummer80.github.io/quiz-app/'
-        } 
+        }
+        // ,
+        // {
+        //     name: "ZIP Zap",
+        //     description: "Learn about any ZIP code in the United States using ZIP Zap! The city, state, time zone, weather and map of that ZIP code are just a click away. Even a 3D view of the area can be seen with the help of the Google Earth plugin. The APIs used to get this content were Weather Underground's web API and the Google Maps / Google Earth JavaScript APIs. (JavaScript, jQuery, jQueryUI, AJAX)",
+        //     logo: 'images/zipzap_logo.png',
+        //     thumb: 'images/zipzap_thumb.png',
+        //     link: 'http://chummer80.github.io/zipzap/'
+        // },
+        // {
+        //     name: "NBA Quiz",
+        //     description: "Think you know a lot about NBA basketball? Test your skills by answering these trivia questions. (JavaScript, jQuery, HTML5, CSS3)",
+        //     logo: 'images/nbaquiz_logo.png',
+        //     thumb: 'images/nbaquiz_thumb.png',
+        //     link: 'http://chummer80.github.io/quiz-app/'
+        // } 
         // {
         //     name: "Listomania",
         //     description: "This handy app can be used as a to-do list, a shopping list, or any other type of list you can imagine. Items can be crossed off, removed from the list, or sorted alphabetically. Want to save the list? Don't worry, the contents of the list persist between page visits. (JavaScript, jQuery, HTML5)",
@@ -431,7 +432,8 @@ $(document).ready(function() {
 
     // make carousel visible by inserting it into the DOM.
     // Place it after the title, with 1 spacer div in between.
-    carousel.getJqueryObj().insertAfter($('#title_div + div.flex_spacer'));
+    // carousel.getJqueryObj().insertAfter($('#title_div + div.contact_links'));
+    carousel.getJqueryObj().insertAfter($('#flex_container div.flex_spacer').eq(0));
 
     // wait for images to laod before building arrow buttons
     $(window).load(function() {

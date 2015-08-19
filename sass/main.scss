@@ -2,9 +2,9 @@
 
 
 // for debugging 
-// * {
-//   outline: 1px red solid;
-// }
+* {
+  // outline: 1px red solid;
+}
 
 .full-height {
   height: 100%;
@@ -59,6 +59,8 @@ body {
 #project_info_dialog {
   @extend .panel-appearance;
   color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: .2rem;
   padding-right: .2rem;
   text-align: center;
@@ -153,4 +155,36 @@ body {
   font-family: BebasNeue;
   font-size: 3rem;
   text-align: center;
+}
+
+
+.contact_links {
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    margin: 5px;
+  }
+
+  .github {
+    background-image: url("../images/GitHub-Mark-64px.png");
+  }
+  .github:hover {
+    background-image: url("../images/GitHub-Mark-Light-64px.png");
+  }
+
+  .linkedin {
+    background-image: url("../images/In-Black-66px-TM.png"); 
+  }
+  .linkedin:hover {
+    background-image: url("../images/In-White-66px-TM.png");
+  }
+
+  .email {
+    background-image: url("../images/email_black.png"); 
+  }
+  .email:hover {
+    background-image: url("../images/email_white.png");
+  }
 }
